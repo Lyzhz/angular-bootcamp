@@ -15,4 +15,13 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
+
+const precoCombutivel = 5.79;
+const kmPorLitros = 16;
+const distanciaKm = 100;
+
+const litrosConsumidos = distanciaKm / kmPorLitros;
+const valorTotal = litrosConsumidos * precoCombutivel;
+
+console.log(valorTotal);
